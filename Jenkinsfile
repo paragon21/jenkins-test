@@ -1,5 +1,5 @@
-job('test') {
-  steps {
-    shell("echo hello world")
-  }
-}
+import java.io.File
+
+File file = new File("./src.json")
+println(file.text)
+
