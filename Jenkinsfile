@@ -1,5 +1,5 @@
 import java.io.File
 
-File file = new File("${WORKSPACE}/src.json")
-println(file.text)
+file = readFile("${WORKSPACE}/src.json")
+println(file)
 
