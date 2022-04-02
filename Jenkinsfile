@@ -1,5 +1,3 @@
-import java.io.File
-
-file = readFile "${WORKSPACE}/src.json"
-println(file)
+def releaseScript = readFileFromWorkspace('src.json')
+println(releaseScript)
 
