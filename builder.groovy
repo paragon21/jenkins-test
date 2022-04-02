@@ -1,11 +1,10 @@
-// import groovy.json.JsonSlurper
+import groovy.json.JsonSlurper
 
-// def jsonSlurper = new JsonSlurper()
+def jsonSlurper = new JsonSlurper()
 def jsonText = readFileFromWorkspace('src.json')
 
-// def config = jsonSlurper.parse(releaseScript)
+def config = jsonSlurper.parseText(releaseScript)
 
-def props = readJSON text: jsonText
 
 println(props)
 
