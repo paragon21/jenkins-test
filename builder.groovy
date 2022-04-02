@@ -6,5 +6,5 @@ def jsonText = readFileFromWorkspace('src.json')
 def config = jsonSlurper.parseText(jsonText)
 
 
-println(props)
+println(config)
 
